@@ -1,0 +1,35 @@
+Côté Back-End :
+
+  1/ Service des entités Role et UsersRole :
+  Le service des entités Role et UsersRole est responsable de la logique métier associée à ces entités. 
+  Il doit être capable de gérer la création, la mise à jour, la récupération et la suppression des rôles 
+  et des relations entre les utilisateurs et les rôles.
+
+  2/ Contrôleur des entités Role et UsersRole :
+  Les contrôleurs sont responsables de l'exposition des fonctionnalités des entités Role et UsersRole via des API REST. 
+  Ils doivent recevoir les requêtes, valider les données, appeler les services appropriés et renvoyer les réponses appropriées.
+  
+Côté Front-End :
+
+  1/ Module de l'entité Role :
+  Un module Angular (ou tout autre framework Front-End que vous utilisez) pour encapsuler les fonctionnalités liées à l'entité Role. 
+  Le module doit importer les dépendances nécessaires, déclarer les composants, les services et les routes spécifiques à l'entité Role.
+  
+  2/ Service de l'entité Role :
+Un service Angular qui interagit avec l'API Back-End pour effectuer des opérations CRUD sur les rôles. 
+Ce service encapsule les appels HTTP et fournit des méthodes pour récupérer, créer, mettre à jour et supprimer des rôles.
+
+  3/ Composants de l'entité Role :
+  
+  Les composants Angular qui définissent l'interface utilisateur pour l'entité Role. 
+  Ils inclurent un composant pour afficher la liste des rôles, un composant pour afficher les détails d'un rôle spécifique, 
+  et un composant pour créer ou mettre à jour un rôle.
+  
+  Structure :
+  
+  RoleListComponent : Affiche la liste des rôles récupérés à partir du service RoleService.
+  RoleDetailComponent : Affiche les détails d'un rôle spécifique récupéré à partir du service RoleService.
+  RoleFormComponent : Permet de créer ou mettre à jour un rôle en utilisant le service RoleService.
+  
+  Ces composants sont utilisés dans les vues correspondantes avec la directive d'Angular appropriée, 
+  par exemple, *ngFor pour afficher la liste des rôles dans RoleListComponent.
